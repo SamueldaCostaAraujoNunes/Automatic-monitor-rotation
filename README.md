@@ -18,11 +18,17 @@ When I started programming, I felt the need for a secondary monitor to help me d
 An Leonardo arduino will be connected to a gyroscope / accelerometer, and when there is a change in the orientation of the sensor, the arduino will send a keyboard shortcut to the computer to change the direction of the screen.
 
 ### Results
-  MPU-6050 sensor in television.
+
+  MPU-6050 sensor in television :exclamation:
+  
  ![Sensor](https://github.com/SamueldaCostaAraujoNunes/Automatic-monitor-rotation/blob/master/src/mpu-6050-in-tv.jpg)
-  Arduino Leonardo Pro Micro
+ 
+  Arduino Leonardo Pro Micro :exclamation:
+  
  ![Leonardo](https://github.com/SamueldaCostaAraujoNunes/Automatic-monitor-rotation/blob/master/src/leonardo-pro-micro.jpg)
- Results
+ 
+ Results :exclamation:
+ 
  ![gif](https://github.com/SamueldaCostaAraujoNunes/Automatic-monitor-rotation/blob/master/src/rotation-gif.gif)
  
 ### Used libraries :books:
