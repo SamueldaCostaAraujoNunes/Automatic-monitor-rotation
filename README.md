@@ -9,16 +9,21 @@ When I started programming, I felt the need for a secondary monitor to help me d
 ### What you will need:
  - 1 Arduino from the Leonardo family. (I used the micro pro, but either one works)      
  - 1 GY-521 MPU-6050 sensor      
- - Install the MPU6050_tockn.h library      
 
 ### Schematic 
- - Vou inserir as imagens aqui
+ ![Esquema](https://github.com/SamueldaCostaAraujoNunes/Automatic-monitor-rotation/blob/master/src/schematic.jpg)
+ 
  
 ### How it works
 An Leonardo arduino will be connected to a gyroscope / accelerometer, and when there is a change in the orientation of the sensor, the arduino will send a keyboard shortcut to the computer to change the direction of the screen.
 
 ### Results
- - Resultados aqui
+  MPU-6050 sensor in television.
+ ![Sensor](https://github.com/SamueldaCostaAraujoNunes/Automatic-monitor-rotation/blob/master/src/mpu-6050-in-tv.jpg)
+  Arduino Leonardo Pro Micro
+ ![Leonardo](https://github.com/SamueldaCostaAraujoNunes/Automatic-monitor-rotation/blob/master/src/leonardo-pro-micro.jpg)
+ Results
+ ![gif](https://github.com/SamueldaCostaAraujoNunes/Automatic-monitor-rotation/blob/master/src/rotation-gif.gif)
  
 ### Used libraries :books:
  - [MPU6050_tockn](https://github.com/tockn/MPU6050_tockn)
