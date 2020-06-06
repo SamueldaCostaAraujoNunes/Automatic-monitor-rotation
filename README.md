@@ -9,6 +9,7 @@ How it works:
  An Leonardo arduino will be connected to a gyroscope / accelerometer, and when there is a change in the orientation of the sensor, the arduino will send a keyboard shortcut to the computer to change the direction of the screen.
 
 What you will need:
+
 ● 1 Arduino from the Leonardo family. (I used the micro pro, but either one works)      
 ● 1 GY-521 MPU-6050 sensor      
 ● Install the MPU6050_tockn.h library      
