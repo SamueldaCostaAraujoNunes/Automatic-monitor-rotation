@@ -1,2 +1,2 @@
 # Automatic monitor rotation
- A project for arduino Leonardo, in order to automate the rotation of the computer screen orientation.
+ A project for the Arduino Leonardo, interested in automating the rotation of the orientation of the computer screen.
