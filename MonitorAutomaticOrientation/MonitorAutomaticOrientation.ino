@@ -12,9 +12,9 @@
 MPU6050 mpu6050(Wire);
 
 //DECLARATION OF VARIABLES  
-float anguloX;//Variable that keeps the rotation angle on the X axis
-float anguloY;//Variable that keeps the rotation angle on the Y axis
-float anguloZ;//Variable that keeps the rotation angle on the Z axis
+float angleX;//Variable that keeps the rotation angle on the X axis
+float angleY;//Variable that keeps the rotation angle on the Y axis
+float angleZ;//Variable that keeps the rotation angle on the Z axis
 char orientation = 'l';//Control variable over the current monitor position
 
 //DECLARATION OF KEYS FOR SHORTCUT
@@ -49,26 +49,26 @@ void loop() {
   }
 
   //Performs the averages of the angles, to achieve a more precise result.
-  anguloX = x / 20;
-  anguloY = y / 20;
-  anguloZ = z / 20;
+  angleX = x / 20;
+  angleY = y / 20;
+  angleZ = z / 20;
 
   //Checks whether it has rotated on the X axis
-  if (anguloX >= 37  && orientation != 'u'){//Landscape
+  if (angleX >= 37  && orientation != 'u'){//Landscape
     setOrientation(up);
-    orientacao = 'u';
-  } else if (anguloX <= -37 && orientation != 'd'){//Inverted Landscape
+    orientation = 'u';
+  } else if (angleX <= -37 && orientation != 'd'){//Inverted Landscape
     setOrientation(down);
-    orientacao = 'd';
+    orientation = 'd';
   }
 
   //Checks whether it has rotated on the Y axis
-  if (anguloY >= 37 && orientation != 'r'){//Portrait
+  if (angleY >= 37 && orientation != 'r'){//Portrait
     setOrientation(right);
-    orientacao = 'r';
-  } else if (anguloY <= -37 && orientation != 'l'){//Inverted Portrait
+    orientation = 'r';
+  } else if (angleY <= -37 && orientation != 'l'){//Inverted Portrait
     setOrientation(left);
-    orientacao = 'l';
+    orientation = 'l';
   }
   
 }
