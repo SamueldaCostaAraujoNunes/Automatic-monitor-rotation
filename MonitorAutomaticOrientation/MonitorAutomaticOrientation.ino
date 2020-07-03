@@ -15,7 +15,7 @@ MPU6050 mpu6050(Wire);
 float anguloX;//Variable that keeps the rotation angle on the X axis
 float anguloY;//Variable that keeps the rotation angle on the Y axis
 float anguloZ;//Variable that keeps the rotation angle on the Z axis
-char orientacao = 'l';//Control variable over the current monitor position
+char orientation = 'l';//Control variable over the current monitor position
 
 //DECLARATION OF KEYS FOR SHORTCUT
 char ctrl = KEY_LEFT_CTRL;
@@ -54,19 +54,19 @@ void loop() {
   anguloZ = z / 20;
 
   //Checks whether it has rotated on the X axis
-  if (anguloX >= 37  && orientacao != 'u'){//Landscape
+  if (anguloX >= 37  && orientation != 'u'){//Landscape
     setOrientation(up);
     orientacao = 'u';
-  } else if (anguloX <= -37 && orientacao != 'd'){//Inverted Landscape
+  } else if (anguloX <= -37 && orientation != 'd'){//Inverted Landscape
     setOrientation(down);
     orientacao = 'd';
   }
 
   //Checks whether it has rotated on the Y axis
-  if (anguloY >= 37 && orientacao != 'r'){//Portrait
+  if (anguloY >= 37 && orientation != 'r'){//Portrait
     setOrientation(right);
     orientacao = 'r';
-  } else if (anguloY <= -37 && orientacao != 'l'){//Inverted Portrait
+  } else if (anguloY <= -37 && orientation != 'l'){//Inverted Portrait
     setOrientation(left);
     orientacao = 'l';
   }
